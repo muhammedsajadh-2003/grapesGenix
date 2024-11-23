@@ -146,7 +146,7 @@ const Navbar = () => {
             <ListItemText primary="PROJECTS" onClick={handleProject2Click} />
           </ListItem>
           <ListItem>
-            <ApplyButton fullWidth>Apply Now</ApplyButton>
+            <ApplyButton fullWidth href="https://forms.gle/SV5ZkjTEeXewKwQi8">Apply Now</ApplyButton>
           </ListItem>
         </List>
       </Box>
