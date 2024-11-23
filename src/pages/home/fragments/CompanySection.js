@@ -29,7 +29,7 @@ const CompanyLogo = ({ logo, name }) => (
       margin: { xs: 0.5, sm: 1 },
     }}
   >
-    <img src={logo} alt={name} style={{ maxHeight: '100%', maxWidth: '100%', objectFit: 'contain' }} />
+    <img src={logo} alt={name} style={{ maxHeight: '100%', maxWidth: '100%', objectFit: 'contain', alignItems:'center', justifyContent:'center' }} />
   </Box>
 );
 
@@ -57,7 +57,7 @@ const sliderSettings = {
         slidesToShow: 2,
         slidesToScroll: 1,
         centerMode: true, // Ensure the slider is centered on smaller screens
-        centerPadding: '20px', // Adjust padding for centering on mobile
+        centerPadding: '10px', // Adjust padding for centering on mobile
       },
     },
     {
@@ -66,7 +66,7 @@ const sliderSettings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true, // Ensure the slider is centered on smaller screens
-        centerPadding: '20px', // Adjust padding for centering on mobile
+        centerPadding: '10px', // Adjust padding for centering on mobile
       },
     },
   ],
