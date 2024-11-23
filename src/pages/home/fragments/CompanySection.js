@@ -26,7 +26,7 @@ const CompanyLogo = ({ logo, name }) => (
       alignItems: 'center',
       height: { xs: 80, sm: 100, md: 120 }, // Scaled height for responsiveness
       width: { xs: 120, sm: 140, md: 160 }, // Scaled width for responsiveness
-      margin: { xs: 0.5, sm: 1 }, // Space between logos
+      margin: { xs: 0.5, sm: 0.5, md: 0.5 }, // Decrease the space between logos
     }}
   >
     <img src={logo} alt={name} style={{ maxHeight: '100%', maxWidth: '100%', objectFit: 'contain' }} />
@@ -41,6 +41,8 @@ const sliderSettings = {
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
+  centerMode: true, // Ensure the slider is centered
+  centerPadding: '0', // Remove extra space at the edges of the slider
   responsive: [
     {
       breakpoint: 1024,
