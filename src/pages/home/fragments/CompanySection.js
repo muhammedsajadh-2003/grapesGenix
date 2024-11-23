@@ -24,9 +24,9 @@ const CompanyLogo = ({ logo, name }) => (
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      height: { xs: 80, sm: 100, md: 120 }, // Scaled height for responsiveness
-      width: { xs: 120, sm: 140, md: 160 }, // Scaled width for responsiveness
-      margin: { xs: 0.5, sm: 0.5, md: 0.5 }, // Decrease the space between logos
+      height: { xs: 80, sm: 100, md: 120 },
+      width: { xs: 120, sm: 140, md: 160 },
+      margin: { xs: 0.5, sm: 1 },
     }}
   >
     <img src={logo} alt={name} style={{ maxHeight: '100%', maxWidth: '100%', objectFit: 'contain' }} />
@@ -41,8 +41,8 @@ const sliderSettings = {
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
-  centerMode: true, // Ensure the slider is centered
-  centerPadding: '0', // Remove extra space at the edges of the slider
+  centerMode: true,
+  centerPadding: '0',
   responsive: [
     {
       breakpoint: 1024,
@@ -56,6 +56,8 @@ const sliderSettings = {
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
+        centerMode: true, // Ensure the slider is centered on smaller screens
+        centerPadding: '20px', // Adjust padding for centering on mobile
       },
     },
     {
@@ -63,6 +65,8 @@ const sliderSettings = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        centerMode: true, // Ensure the slider is centered on smaller screens
+        centerPadding: '20px', // Adjust padding for centering on mobile
       },
     },
   ],
