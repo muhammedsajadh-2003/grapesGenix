@@ -27,7 +27,7 @@ const CyberSecurityCoursePage = () => {
       title: 'Full-Stack Developer Course for Working Professionals',
       description: 'Discover courses that offer scholarships to help you advance your career in cyber security.',
       buttonText: 'Apply Now',
-      buttonRoute: '/scholarship',
+      buttonRoute: '/',
       textPosition: 'left',
     },
     {
@@ -52,7 +52,7 @@ const CyberSecurityCoursePage = () => {
 
   const courses = [
     { title: 'Our Courses', description: 'Explore our online courses', bgColor: '#9575CD', route: '/project2' },
-    { title: 'Scholarship', description: 'Courses offering scholarship', bgColor: '#512DA8', route: '/scholarship' },
+    { title: 'Scholarship', description: 'Courses offering scholarship', bgColor: '#512DA8', route: '/' },
     { title: 'Projects or Internship', description: 'Do your academic projects', bgColor: '#9575CD', route: '/projects&internships' },
     { title: 'Certification Courses', description: 'Join for certification courses', bgColor: '#512DA8', route: '/project2' },
   ];
